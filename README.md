@@ -6,13 +6,13 @@
 
 ![](https://i.imgur.com/BzgB1T3.jpg) `My first project without tutorials :)`
 
-##Requirements
+## Requirements
 | technologies  | version |
 | ------------- | ------------- |
 | Python  | 3.7  |
 | Docker | 20.10  |
 
-##local installation
+## local installation
 - #### `docker-compose build`
 
 - #### `docker-compose up`
