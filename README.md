@@ -1,4 +1,4 @@
-# Netflix-for-programmers
+# Netflix for programmers
 
 ##### Hi, this is a netflix clone but with educational videos.
 
@@ -7,12 +7,12 @@
 ![](https://i.imgur.com/BzgB1T3.jpg) `My first project without tutorials :)`
 
 ## Requirements
-| technologies  | version |
+| Technologies  | Version |
 | ------------- | ------------- |
 | Python  | 3.7  |
 | Docker | 20.10  |
 
-## local installation
+## Local installation
 - #### `docker-compose build`
 
 - #### `docker-compose up`
