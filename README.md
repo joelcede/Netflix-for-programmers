@@ -4,7 +4,12 @@
 
 ##### Docker implementation in django, databases with postgres and environment variables .env
 
-![](https://i.imgur.com/BzgB1T3.jpg) `My first project without tutorials :)`
+##### creation of nav and footer
+##### Nav
+![](https://i.imgur.com/sheX5Ni.png)
+
+##### Footer
+![](https://i.imgur.com/thhYgAI.png)
 
 ## Requirements
 | Technologies  | Version |

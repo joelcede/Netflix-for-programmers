@@ -7,3 +7,6 @@ def nav(request):
 
 def footer(request):
     return render(request, 'footer.html')
+
+def base(request):
+    return render(request,'base.html')
