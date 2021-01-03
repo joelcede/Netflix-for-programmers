@@ -4,3 +4,6 @@ from django.http import HttpResponse
 # Create your views here.
 def nav(request):
     return render(request, 'nav.html')
+
+def footer(request):
+    return render(request, 'footer.html')
