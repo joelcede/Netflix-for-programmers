@@ -1,10 +1,20 @@
-{% load static %}
-<link rel="stylesheet" href="{% static 'css/nav_footer.css' %}">
-<body>
-    {% include "nav.html" %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        {% block head_content %}
+        {% endblock %}
 
-    {% block container %}
-    {% endblock %}
-
-    {% include "footer.html" %}
-</body>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/nav_footer.css' %}">
+    </head>
+    <body>
+        {% include "nav.html" %}
+    
+        <div class="containermt">
+            {% block container %}
+            {% endblock %}
+        </div>
+    
+        {% include "footer.html" %}
+    </body>
+</html>

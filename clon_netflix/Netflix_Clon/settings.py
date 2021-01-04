@@ -59,7 +59,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates'
+            BASE_DIR / 'templates',
+            BASE_DIR / 'templates/users'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -129,7 +130,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS= [
-    BASE_DIR / 'static/'
+    BASE_DIR / 'static'
 ]
 STATICFILES_FINDERS =[
     'django.contrib.staticfiles.finders.FileSystemFinder',

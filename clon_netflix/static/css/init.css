@@ -1,0 +1,64 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.background{
+    background-image: url(../img/fondo_Inicio.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-bottom: 8px solid #222;
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(34, 34, 34);
+}
+.content .content_content{
+    background: transparent;
+    position: relative;
+    text-align: center;
+    margin: 200px;
+    color: #fff;
+}
+.letters{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.h1{
+    font-size: 3.4rem;
+}
+p{
+    font-size: 1.625rem;
+}
+.box_button{
+    margin: auto;
+}
+#buttom_started{
+    outline: none;
+    font-size: 1rem;
+    min-height: 40px;
+    margin: .25em auto;
+    margin-top: 0.25em;
+    margin-right: auto;
+    margin-bottom: 0.25em;
+    margin-left: auto;
+    padding: 0 1em;
+    padding-top: 0px;
+    padding-right: 1em;
+    padding-bottom: 0px;
+    padding-left: 1em;
+    background-color: #e50914;
+    border-radius: 2px;
+    border: 0;
+    width: auto;
+    color: #fff;
+    cursor: pointer;
+}
