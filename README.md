@@ -6,7 +6,7 @@
 
 ## creation of the main page
 
-![](https://thumbs.gfycat.com/DistortedLazyEquestrian-mobile.mp4)
+![](https://media2.giphy.com/media/XTGOq046ED4HyzaRlj/giphy.gif)
 
 ## Requirements
 | Technologies  | Version |
