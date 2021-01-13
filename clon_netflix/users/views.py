@@ -10,9 +10,6 @@ def initNetflix(request):
     return render(request, 'init.html')
 """
 
-def lg(request):
-    return render(request, 'users/login.html')
-
 class InitNetflix(auth_views.LoginView):
     template_name = 'users/init.html'
 

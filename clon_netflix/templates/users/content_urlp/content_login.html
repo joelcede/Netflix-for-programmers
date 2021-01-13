@@ -4,6 +4,11 @@
     <div class="cont_lg">
         <div>
             <h1>Sign in</h1>
+            {% if form.errors %}
+                <p class="alert alert-danger">
+                    Your username or password didn't match. Please try again.
+                </p>
+            {% endif %}
             <form action="" class="id">
                 <br>
                 <label for="email" class="h">
