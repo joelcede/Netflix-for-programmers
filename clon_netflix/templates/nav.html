@@ -1,14 +1,14 @@
 {% load static %}
 <nav class="navbar">
     <div>
-        <a href="#">
+        <a href="{% url 'users:init' %}">
             <img src="{% static 'img/netflix-logo-5.png' %}" id="logo_netflix">
         </a>
     </div>
     <div class="container_nav">
         <ul id="button">
             <li class="login_button">
-                <a href="#" class="box_button">
+                <a href="{% url 'users:login' %}" class="box_button">
                     <button id="login_btn">Sign In</button>
                 </a>
             </li>

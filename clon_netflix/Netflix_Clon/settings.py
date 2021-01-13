@@ -60,7 +60,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             BASE_DIR / 'templates',
-            BASE_DIR / 'templates/users'
+            BASE_DIR / 'templates/users',
+            BASE_DIR / 'templates/users/content_urlp'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -145,3 +146,7 @@ STATICFILES_FINDERS =[
 ]
 MEDIA_ROOT = BASE_DIR / 'media/'
 MEDIA_URL = '/media/'
+
+LOGIN_URL = 'users/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = LOGIN_URL
