@@ -1,8 +1,9 @@
 {% load static %}
-<link rel="stylesheet" href="../../../static/css/lg_up.css">
+<link rel="stylesheet" href="{% static 'css/lg_up.css' %}">
 <div class="containter_login">
     <div class="cont_lg">
         <div>
+            <h1>Sign in</h1>
             <form action="" class="id">
                 <br>
                 <label for="email" class="h">
@@ -17,16 +18,27 @@
         <div class="row">
             <div class="col-md-8 mx-auto social-container my-2 order-md-1">
                 <button class="btn btn-danger  mb-2">
-                    <a href="#">Login with Instagram</a>
-                </button>
-                <button class="btn btn-primary mb-2">
-                    <a href="#">Login with Facebook
+                    <a href="#">
+                        <img src="{% static 'img/insta.png' %}" width="20" height="20" alt="">
+                        Login with Instagram
                     </a>
-                </button>
+                </button><br>
+                <button class="btn btn-primary mb-2">
+                    <a href="#">
+                        <img src="{% static 'img/fb.png' %}" width="20" height="20"alt="">
+                        Login with Facebook
+                    </a>
+                </button><br>
                 <button class="btn btn-info mb-2">
-                    <a href="#">Login with LinkedIn</a>
-                </button>
+                    <a href="#">
+                        <img src="{% static 'img/linkedin-logo.png' %}" width="20" height="20" alt="">
+                        Login with LinkedIn
+                    </a>
+                </button><br>
             </div>
         </div>
+        <span style="color: #737373;">New to Netflix?
+            <a href="" style="color: #fff;">Sign up now.</a>
+        </span>
     </div>
 </div>

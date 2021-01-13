@@ -9,3 +9,6 @@ def base(request):
 
 def inicial(request):
     return render(request, 'init.html')
+
+def lg(request):
+    return render(request, 'content_urlp/content_login.html')

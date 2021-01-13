@@ -12,11 +12,18 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    border: 5px;
 }
 .cont_lg{
     background: rgba(0,0,0,.75);
     box-sizing: border-box;
-    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    border-radius: 6px;
+    border: none;
+}
 }
 .id, .row{
     text-align: center;
@@ -58,6 +65,24 @@
     border: 0;
     outline: none;
     padding: 15px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+h1{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.row{
+    text-align: start;
+}
+button{
+    background: none;
+    border: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: #737373;
 }
