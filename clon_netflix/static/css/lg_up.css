@@ -4,6 +4,11 @@
     margin: 0px;
 }
 .containter_login{
+    background-image: url(../img/fondo_Inicio.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
     padding: 60px 68px 40px;
     margin-bottom: 90px;
     display: flex;
@@ -23,7 +28,6 @@
     padding-bottom: inherit;
     border-radius: 6px;
     border: none;
-}
 }
 .id, .row{
     text-align: center;

@@ -11,4 +11,4 @@ def inicial(request):
     return render(request, 'init.html')
 
 def lg(request):
-    return render(request, 'content_urlp/content_login.html')
+    return render(request, 'users/login.html')
