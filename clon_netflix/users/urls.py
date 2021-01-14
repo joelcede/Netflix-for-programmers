@@ -13,4 +13,10 @@ urlpatterns = [
         view=views.InitNetflix.as_view(),
         name='init'
     ),
+
+    path(
+        route='signup/',
+        view=views.SignupView.as_view(),
+        name='signup'
+    )
 ]

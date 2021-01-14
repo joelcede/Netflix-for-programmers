@@ -5,6 +5,7 @@ from django.views.generic import TemplateView
 from django.contrib.auth import views as auth_views
 from users.forms import SignupForm
 from django.urls import reverse, reverse_lazy
+from django.views.generic import FormView
 
 # Create your views here.
 """
@@ -18,8 +19,8 @@ class InitNetflix(auth_views.LoginView):
 class LoginView(auth_views.LoginView):
     template_name = 'users/login.html'
 
-class SignupView(formView):
-    template_name = 'users.signup.html'
+class SignupView(FormView):
+    template_name = 'users/signup.html'
     form_class = SignupForm
     success_url = reverse_lazy('users:login')
 
