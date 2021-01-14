@@ -1,5 +1,23 @@
 {% block container %}
     <form action="{% url 'users:signup' %}" method="POST">
+        <label for="">
+            <input type="text">
+        </label><br>
+        <label for="">
+            <input type="email">
+        </label><br>
+        <label for="">
+            <input type="password">
+        </label><br>
+        <label for="">
+            <input type="password">
+        </label><br>
+        <label for="">
+            <input type="text">
+        </label><br>
+        <label for="">
+            <input type="text">
+        </label><br>
         <button type="submit">Register</button>
     </form>
 {% endblock %}
