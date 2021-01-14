@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from templates import users
 from django.views.generic import TemplateView
 from django.contrib.auth import views as auth_views
+from users.forms import SignupForm
+from django.urls import reverse, reverse_lazy
 
 # Create your views here.
 """
@@ -15,3 +17,12 @@ class InitNetflix(auth_views.LoginView):
 
 class LoginView(auth_views.LoginView):
     template_name = 'users/login.html'
+
+class SignupView(formView):
+    template_name = 'users.signup.html'
+    form_class = SignupForm
+    success_url = reverse_lazy('users:login')
+
+    def form_valid(self, form):
+        form.save()
+        return super().form_valid(form)
