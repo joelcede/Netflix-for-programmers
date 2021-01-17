@@ -9,7 +9,8 @@
                     Your username or password didn't match. Please try again.
                 </p>
             {% endif %}
-            <form action="" class="id">
+            <form method="POST" action="{% url 'users:login' %}" class="id">
+                {% csrf_token %}
                 <br>
                 <label for="email" class="h">
                     <input type="email" id="email" placeholder="email">
@@ -43,7 +44,7 @@
             </div>
         </div>
         <span style="color: #737373;">New to Netflix?
-            <a href="" style="color: #fff;">Sign up now.</a>
+            <a href="{% url 'users:signup' %}" style="color: #fff;">Sign up now.</a>
         </span>
     </div>
 </div>

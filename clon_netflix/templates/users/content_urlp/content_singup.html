@@ -1,23 +1,32 @@
-{% block container %}
-    <form action="{% url 'users:signup' %}" method="POST">
-        <label for="">
-            <input type="text">
-        </label><br>
-        <label for="">
-            <input type="email">
-        </label><br>
-        <label for="">
-            <input type="password">
-        </label><br>
-        <label for="">
-            <input type="password">
-        </label><br>
-        <label for="">
-            <input type="text">
-        </label><br>
-        <label for="">
-            <input type="text">
-        </label><br>
-        <button type="submit">Register</button>
-    </form>
-{% endblock %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+<div class="containerForm">
+    <div class="centerFormSignUp">
+        <form action="{% url 'users:signup' %}" method="POST">
+            {% csrf_token %}
+
+            {{ form.as_p}}
+            <label for="username">
+                <input type="text" id="username" placeholder="UserName">
+            </label><br><br>
+            <label for="email">
+                <input type="email" id="email" placeholder="E-mail">
+            </label><br><br>
+            <label for="password">
+                <input type="password" id="password" placeholder="Password">
+            </label><br><br>
+            <label for="password_confirmation">
+                <input type="password" id="password_confirmation" placeholder="Password Confirmation">
+            </label><br><br>
+            <label for="first_name">
+                <input type="text" id="first_name" placeholder="First Name">
+            </label><br><br>
+            <label for="last_name">
+                <input type="text" id="last_name" placeholder="Last Name">
+            </label><br><br>
+            <button type="submit" class="btn_register">Register</button><br><br>
+        </form>
+        <br>
+        <button>PayPal Donation</button>
+    </div>
+</div>

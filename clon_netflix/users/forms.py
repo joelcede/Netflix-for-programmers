@@ -10,12 +10,10 @@ class SignupForm(forms.Form):
                             widget=forms.EmailInput()
                         )
     password = forms.CharField(
-                                min_length=5,
                                 max_length=30,
                                 widget=forms.PasswordInput()
                             )
     password_confirmation = forms.CharField(
-                                min_length=5,
                                 max_length=30,
                                 widget=forms.PasswordInput()
                             )

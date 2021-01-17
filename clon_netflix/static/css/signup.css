@@ -1,0 +1,51 @@
+.containerForm{
+    background: #fff;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    padding-right: 68px;
+    padding-left: 68px;
+    /* padding: 60px 68px 40px; */
+    justify-content: center;
+    display: flex;
+}
+.centerFormSignUp{
+    padding: 40px;
+    /* background: rgba(0,0,0,.75); */
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* padding-top: inherit; */
+    /* padding-bottom: inherit; */
+    border-radius: 6px;
+    border: none;
+}
+input{
+    border: 1px solid;
+    border-color: black;
+    outline: none;
+    padding-right: 130px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+input:hover{
+    border-color: blue;
+}
+.btn_register{
+    background:#e50914;
+    color: #fff;
+    border: 0 solid;
+    outline: none;
+    padding-right: 126px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 126px;
+    border-radius: 5px;
+    cursor: pointer;
+}

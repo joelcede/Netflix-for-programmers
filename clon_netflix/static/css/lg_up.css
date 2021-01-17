@@ -71,6 +71,7 @@
     padding: 15px;
     padding-left: 140px;
     padding-right: 140px;
+    cursor: pointer;
 }
 h1{
     color: #fff;
@@ -85,6 +86,7 @@ button{
     background: none;
     border: none;
     display: flex;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
