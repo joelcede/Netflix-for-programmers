@@ -34,7 +34,7 @@ class SignupForm(forms.Form):
 
 class UserForm(forms.Form):
     title = forms.CharField(max_length=60,required=True)
-    picture = forms.ImageField()
+    picture = forms.ImageField(required=True)
     website = forms.URLField(max_length=200,required=True)
     description = forms.CharField(max_length=400,required=False)
     phone_number = forms.CharField(max_length=10,required=False)

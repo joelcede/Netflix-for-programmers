@@ -54,6 +54,13 @@ input:hover{
     border-radius: 5px;
     cursor: pointer;
 }
-#id_username, #id_email, #id_password, #id_password_confirmation, #id_first_name,#id_last_name{
-    color: red;
+li{
+    list-style: none;
+    background: #e50914;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    border: 0.5px solid burlywood;
+    border-radius: 5px;
+    color: #fff;
 }

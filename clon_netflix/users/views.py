@@ -3,9 +3,9 @@ from django.http import HttpResponse
 from templates import users
 from django.views.generic import TemplateView
 from django.contrib.auth import views as auth_views
-from users.forms import SignupForm
+from users.forms import SignupForm,UserForm
 from django.urls import reverse, reverse_lazy
-from django.views.generic.edit import FormView
+from django.views.generic import FormView
 
 # Create your views here.
 """
