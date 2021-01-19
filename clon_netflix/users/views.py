@@ -5,7 +5,7 @@ from django.views.generic import TemplateView
 from django.contrib.auth import views as auth_views
 from users.forms import SignupForm
 from django.urls import reverse, reverse_lazy
-from django.views.generic import FormView
+from django.views.generic.edit import FormView
 
 # Create your views here.
 """

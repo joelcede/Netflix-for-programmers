@@ -1,21 +1,22 @@
 from django.db import models
 
 # Create your models here.
-class User(models.Model):
+class UserM(models.Model):
     """user model"""
 
-    username = models.CharField(max_length=50, unique=True)
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50, blank=True)
+    user = models.CharField(max_length=50, unique=True)
 
-    email = models.EmailField(unique=True)
-    password = models.CharField(max_length=50)
+    title = models.TextField(max_length=60)
+    picture = models.ImageField(upload_to='users/pictures')
+    website = models.URLField(max_length=200)
 
-    country = models.CharField(max_length=50,blank=True)
+    description = models.TextField(max_length=400, blank=True)
+    phone_number = models.CharField(max_length=10, blank=True)
+    email = models.EmailField(max_length=75)
 
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return '{}'.format(self.username)
+        return self.user.username
     

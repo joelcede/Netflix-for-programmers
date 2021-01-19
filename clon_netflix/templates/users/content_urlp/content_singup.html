@@ -6,8 +6,14 @@
             {% csrf_token %}
 
             {{ form.as_p}}
-            <label for="username">
-                <input type="text" id="username" placeholder="UserName">
+            <input id="id_username" hidden placeholder="UserName">
+            <input id="id_email" hidden placeholder="E-mail">
+            <input id="id_password" hidden placeholder="Password">
+            <input id="id_password_confirmation" hidden placeholder="Password Confirmation">
+            <input id="id_first_name" hidden placeholder="First Name">
+            <input id="id_last_name" hidden placeholder="Last Name">
+            <!-- <label for="username">
+                <input type="text" id="username" placeholder="UserName" >
             </label><br><br>
             <label for="email">
                 <input type="email" id="email" placeholder="E-mail">
@@ -23,10 +29,12 @@
             </label><br><br>
             <label for="last_name">
                 <input type="text" id="last_name" placeholder="Last Name">
-            </label><br><br>
+            </label><br><br> 
+            <p>gracias</p>-->
             <button type="submit" class="btn_register">Register</button><br><br>
         </form>
         <br>
         <button>PayPal Donation</button>
+        
     </div>
 </div>

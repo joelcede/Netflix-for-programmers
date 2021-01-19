@@ -24,6 +24,11 @@
     border-radius: 6px;
     border: none;
 }
+p{
+    font-size: 0;
+    padding-bottom: 18px;
+
+}
 input{
     border: 1px solid;
     border-color: black;
@@ -48,4 +53,7 @@ input:hover{
     padding-left: 126px;
     border-radius: 5px;
     cursor: pointer;
+}
+#id_username, #id_email, #id_password, #id_password_confirmation, #id_first_name,#id_last_name{
+    color: red;
 }
