@@ -3,12 +3,46 @@ from django.contrib.auth.models import User
 from users.models import UserM as userModels
 
 class SignupForm(forms.Form):
-    username = forms.CharField(min_length=5,max_length=30)
-    email = forms.CharField(min_length=6,max_length=70,widget=forms.EmailInput())
-    password = forms.CharField(max_length=30,widget=forms.PasswordInput())
-    password_confirmation = forms.CharField(max_length=30,widget=forms.PasswordInput())
-    first_name = forms.CharField(min_length=3,max_length=50)
-    last_name = forms.CharField(min_length=3,max_length=50)
+    username = forms.CharField(
+        min_length=5,
+        max_length=30,
+        widget=forms.TextInput(
+            attrs={'placeholder':'Username'}
+        )
+    )
+    email = forms.CharField(
+        min_length=6,
+        max_length=70,
+        widget=forms.EmailInput(
+            attrs={'placeholder':'jioska@example.com'}
+        )
+    )
+    password = forms.CharField(
+        max_length=30,
+        widget=forms.PasswordInput(
+            attrs={'placeholder':'Password'}
+        )
+    )
+    password_confirmation = forms.CharField(
+        max_length=30,
+        widget=forms.PasswordInput(
+            attrs={'placeholder':'Password Confirmation'}
+        )
+    )
+    first_name = forms.CharField(
+        min_length=3,
+        max_length=50, 
+        widget=forms.TextInput(
+            attrs={'placeholder':'First Name'}
+        )
+    )
+    last_name = forms.CharField(
+        min_length=3,
+        max_length=50, 
+        widget=forms.TextInput(
+            attrs={'placeholder':'Last Name'}
+        )
+    )
 
     def clean_username(self):
         username = self.cleaned_data['username']
