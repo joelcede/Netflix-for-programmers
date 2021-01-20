@@ -1,0 +1,8 @@
+<div>
+    <div>
+        <form action="{% url 'user:update' %}" method="POST" enctype="multipart/form-data"></form>
+        {% crsf_token %}
+        {{ form.as_p}}
+        <button type="submit" class="btn_register">Update Profile</button><br><br>
+    </div>
+</div>

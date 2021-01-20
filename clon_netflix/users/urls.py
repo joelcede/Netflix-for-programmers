@@ -19,4 +19,10 @@ urlpatterns = [
         view=views.SignupView.as_view(),
         name='signup'
     )
+    path(
+        "update/",
+        view=views.UpdateProfileView.as_view()
+        name="update"
+    )
+    
 ]
