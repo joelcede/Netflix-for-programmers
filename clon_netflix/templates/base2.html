@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/nav_footer.css' %}">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div>
+                <a href="{% url 'users:init' %}">
+                    <img src="{% static 'img/netflix-logo-5.png' %}" id="logo_netflix">
+                </a>
+            </div>
+        </nav>
+        {% block container %}
+        {% endblock %}
+        <footer>
+            <div class="contenedor">
+                <h1 style="color: white;">Contact Information</h1>
+                <br>
+                <a href="https://github.com/joelcede">
+                    <img src="{% static 'img/github-blue.png' %}" id="logo_github">
+                </a>
+                <a href="https://www.linkedin.com/in/joel-steven-cede&ntilde;o-7517b0201/">
+                    <img src="{% static 'img/linkedin-logo.png' %}" id="logo_linkedin">
+                </a>
+                <a href="mailto:jioska_one@outlook.es">
+                    <img src="{% static 'img/logo-hotmail.png' %}" id="logo_hotmail">
+                </a>
+                <br>
+                <br>
+                <p style="color: white; font-size: 18px;">click on the images</p>
+            </div>
+        </footer>
+    </body>
+</html>

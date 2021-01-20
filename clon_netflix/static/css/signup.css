@@ -29,7 +29,10 @@ p{
     padding-bottom: 18px;
 
 }
-input{
+/* input */
+#id_username,#id_email,#id_password,
+#id_password_confirmation,
+#id_first_name,#id_last_name{
     border: 1px solid;
     border-color: black;
     outline: none;
